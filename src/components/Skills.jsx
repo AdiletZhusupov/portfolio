@@ -3,12 +3,11 @@ import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
 import ReactImg from '../assets/react.png';
-import Node from '../assets/node.png';
 import FireBase from '../assets/firebase.png';
 import GitHub from '../assets/github.png';
 import Mui from '../assets/mui.png';
 import Jest from '../assets/jest.png';
-
+/* eslint-disable */
 const Skills = () => {
   return (
     <div name='skills' className='w-full h-screen bg-[#1D1F1C] text-white'>

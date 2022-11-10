@@ -1,5 +1,5 @@
 import React from 'react'
-
+/* eslint-disable */
 const Contact = () => {
   return (
     <div name='contact' className='w-full h-screen bg-[#1D1F1C] flex justify-center items-center p-4'>
