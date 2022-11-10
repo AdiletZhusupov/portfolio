@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-/* eslint-disable */
 import {
   FaBars,
   FaTimes,
@@ -9,7 +8,8 @@ import {
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
 import cv from '../assets/cv/adilet-zhusupov-cv.pdf';
-// import { Link } from 'react-scroll';
+import { Link } from 'react-scroll';
+/* eslint-disable */
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -24,19 +24,29 @@ const Navbar = () => {
       {/* menu */}
       <ul className='hidden md:flex'>
         <li>
-          <a className='text-yellow-600' href='/'>Home</a>
+          <Link className='text-yellow-600' to='home' smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
         <li>
-          <a className='text-yellow-600' href='/about'>About</a>
+          <Link className='text-yellow-600' to='about' smooth={true} duration={500}>
+            About
+          </Link>
         </li>
         <li>
-          <a className='text-yellow-600' href='/skills'>Skills</a>
+          <Link className='text-yellow-600' to='skills' smooth={true} duration={500}>
+            Skills
+          </Link>
         </li>
         <li>
-          <a className='text-yellow-600' href='/work'>Work</a>
+          <Link className='text-yellow-600' to='work' smooth={true} duration={500}>
+            Work
+          </Link>
         </li>
         <li>
-          <a className='text-yellow-600' href='/contact'>Contact</a>
+          <Link className='text-yellow-600' to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
         </li>
       </ul>
 
@@ -54,34 +64,33 @@ const Navbar = () => {
         }
       >
         <li className='py-6 text-4xl'>
-          {/* <Link onClick={handleClick} to='home' smooth={true} duration={500} className='hover:text-yellow-600'>
+          <Link onClick={handleClick} to='home' smooth={true} duration={500} className='hover:text-yellow-600'>
             Home
-          </Link> */}
-          <a href='/' className='hover:text-yellow-600'>Home</a>
+          </Link>
         </li>
         <li className='py-6 text-4xl'>
-          {/* <Link onClick={handleClick} to='about' smooth={true} duration={500} className='hover:text-yellow-600'>
+          {' '}
+          <Link onClick={handleClick} to='about' smooth={true} duration={500} className='hover:text-yellow-600'>
             About
-          </Link> */}
-          <a href='/about' className='hover:text-yellow-600'>About</a>
+          </Link>
         </li>
         <li className='py-6 text-4xl'>
-          {/* <Link onClick={handleClick} to='skills' smooth={true} duration={500} className='hover:text-yellow-600'>
+          {' '}
+          <Link onClick={handleClick} to='skills' smooth={true} duration={500} className='hover:text-yellow-600'>
             Skills
-          </Link> */}
-          <a href='/skills' className='hover:text-yellow-600'>Skills</a>
+          </Link>
         </li>
         <li className='py-6 text-4xl'>
-          {/* <Link onClick={handleClick} to='work' smooth={true} duration={500} className='hover:text-yellow-600'>
+          {' '}
+          <Link onClick={handleClick} to='work' smooth={true} duration={500} className='hover:text-yellow-600'>
             Work
-          </Link> */}
-          <a href='/work' className='hover:text-yellow-600'>Work</a>
+          </Link>
         </li>
         <li className='py-6 text-4xl'>
-          {/* <Link onClick={handleClick} to='contact' smooth={true} duration={500} className='hover:text-yellow-600'>
+          {' '}
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500} className='hover:text-yellow-600'>
             Contact
-          </Link> */}
-          <a href='/contact' className='hover:text-yellow-600'>Contact</a>
+          </Link>
         </li>
       </ul>
 
