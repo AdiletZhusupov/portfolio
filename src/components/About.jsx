@@ -1,5 +1,5 @@
 import React from 'react';
-import me from '../assets/me/me2.jpg';
+import me from '../assets/me/me3.jpeg';
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
               <img src={me} alt='my pic'/>
             </div>
             <div className='flex justify-between items-center'>
-              <p>I am an enthusiastic developer with a passion for discovering new coding perspectives. My main experience is building websites and web applications using HTML, CSS, JavaScript and React. I realize that Web Development is fast-growing and modern industry and therefore I strive to learn more and develop new skills. For instance, at this moment in time I'm learning Gatsby - a React-based framework and Tailwind - a CSS framework.<br/> <br/>Learning to code is challenging, time and energy consuming journey, however, it is also rewarding, mentally stimulating and fun.</p>
+              <p>I am an enthusiastic developer with a passion for discovering new coding perspectives. My main experience is building websites and web applications using HTML, CSS, JavaScript and React. I realize that Web Development is fast-growing and modern industry and therefore I strive to learn more and develop new skills. For instance, at this moment in time I'm learning Gatsby - a React-based framework and Tailwind - a CSS framework</p>
             </div>
           </div>
       </div>
